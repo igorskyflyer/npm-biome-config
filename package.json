@@ -1,10 +1,10 @@
 {
-    "name": "@igor.dvlpr/biome-config-igorskyflyer",
-    "version": "2.0.1",
+    "name": "@igorskyflyer/biome-config",
+    "version": "2.1.0",
     "description": "👽 An opinionated config for Biome to be used in JavaScript, TypeScript, JSX, TSX and any JavaScript-related projects. 🐺",
-    "sideEffects": "false",
+    "sideEffects": false,
     "engines": {
-        "node": ">=20"
+        "node": ">=22.0"
     },
     "type": "module",
     "exports": {
@@ -14,7 +14,7 @@
         "./biome.json"
     ],
     "scripts": {
-        "pub": "npm publish --access public"
+        "pub": "git push origin main --tags"
     },
     "keywords": [
         "biome",
@@ -26,24 +26,27 @@
         "rules",
         "object",
         "error",
-        "igorskyflyer",
-        "igor.dvlpr"
+        "igorskyflyer"
     ],
     "license": "MIT",
-    "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
     "funding": "https://ko-fi.com/igorskyflyer",
-    "homepage": "https://github.com/igorskyflyer/npm-biome-config-igorskyflyer",
+    "homepage": "https://github.com/igorskyflyer/npm-biome-config",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/igorskyflyer/npm-biome-config-igorskyflyer.git"
+        "url": "git+https://github.com/igorskyflyer/npm-biome-config.git"
     },
     "bugs": {
-        "url": "https://github.com/igorskyflyer/npm-biome-config-igorskyflyer/issues"
+        "url": "https://github.com/igorskyflyer/npm-biome-config/issues"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.1.2"
+        "@biomejs/biome": "^2.2.2"
     },
     "peerDependencies": {
-        "@biomejs/biome": "^2.1.2"
-    }
+        "@biomejs/biome": "^2.2.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.15.0"
 }
