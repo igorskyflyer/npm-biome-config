@@ -4,6 +4,16 @@
 
 <br>
 
+## v2.2.0 (*20-Oct-2025*)
+
+- ✨ **feat**: ignore `dist/` when formatting
+- ✨ **feat**: ignore `dist/` when linting
+- ✨ **feat**: force the `.js` extension for module imports
+- **💻 dev**: upgrade to Biome `v2.2.6`
+
+<br>
+<br>
+
 ## v2.1.0 (*28-Aug-2025*)
 
 - **💻 dev**: upgrade to Biome `v2.2.2`
