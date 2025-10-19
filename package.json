@@ -1,7 +1,7 @@
 {
     "name": "@igorskyflyer/biome-config",
-    "version": "2.1.0",
-    "description": "👽 An opinionated config for Biome to be used in JavaScript, TypeScript, JSX, TSX and any JavaScript-related projects. 🐺",
+    "version": "2.2.0",
+    "description": "👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. Code like igorskyflyer does! 🐺",
     "sideEffects": false,
     "engines": {
         "node": ">=22.0"
@@ -18,14 +18,25 @@
     },
     "keywords": [
         "biome",
-        "config",
-        "lint",
+        "biome-config",
         "linter",
-        "format",
         "formatter",
-        "rules",
-        "object",
-        "error",
+        "javascript",
+        "typescript",
+        "jsx",
+        "tsx",
+        "eslint-alternative",
+        "code-style",
+        "linting-rules",
+        "strict",
+        "opinionated",
+        "node",
+        "esm",
+        "nodenext",
+        "imports",
+        "performance",
+        "consistency",
+        "igor dimitrijević",
         "igorskyflyer"
     ],
     "license": "MIT",
@@ -40,13 +51,13 @@
         "url": "https://github.com/igorskyflyer/npm-biome-config/issues"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.2.2"
+        "@biomejs/biome": "^2.2.6"
     },
     "peerDependencies": {
-        "@biomejs/biome": "^2.2.2"
+        "@biomejs/biome": "^2.2.6"
     },
     "publishConfig": {
         "access": "public"
     },
-    "packageManager": "pnpm@10.15.0"
+    "packageManager": "pnpm@10.18.3"
 }
