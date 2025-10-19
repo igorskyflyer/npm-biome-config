@@ -4,10 +4,10 @@
   <h4>By igorskyflyer (Igor Dimitrijević)</h4>
 </div>
 
-<br>
+<blockquote align="center">Strict Linting • Clean Imports • Consistent Style • Node ESM Ready</blockquote>
 
 <h4 align="center">
-  👽 An opinionated config for Biome to be used in JavaScript, TypeScript, JSX, TSX and any JavaScript-related projects. 🐺
+  👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules — all in one shareable config. Code like igorskyflyer does! 🐺
 </h4>
 
 <br>
@@ -15,15 +15,14 @@
 
 ## 📃 Table of Contents
 
-- [Features](#-features)
-- [Usage](#-usage)
-- [Changelog](#-changelog)
-- [Support](#-support)
-- [License](#-license)
-- [Related](#-related)
-- [Author](#-author)
+- [**Features**](#-features)
+- [**Usage**](#-usage)
+- [**Changelog**](#-changelog)
+- [**Support**](#-support)
+- [**License**](#-license)
+- [**Related**](#-related)
+- [**Author**](#-author)
 
-<br>
 <br>
 
 ## 🤖 Features
@@ -39,7 +38,6 @@
 - 🧹 Catches **unused** imports, variables, and class members before they **clutter** your codebase
 - 🔍 **Supports** adjacent **overloads** & explicit length checks for **precise** **design** **patterns**
 
-<br>
 <br>
 
 ## 🕵🏼 Usage
@@ -65,7 +63,7 @@ then extend the project's `biome.json` file from it, i.e.:
 `biome.json`
 ```jsonc
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
   "extends": ["@igorskyflyer/biome-config"]
 
   // Additional project-specific configuration
@@ -73,20 +71,17 @@ then extend the project's `biome.json` file from it, i.e.:
 ```
 
 <br>
-<br>
 
 ## 📝 Changelog
 
-📑 The changelog is available here, [CHANGELOG.md](https://github.com/igorskyflyer/npm-biome-config/blob/main/CHANGELOG.md).
+📑 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/npm-biome-config/blob/main/CHANGELOG.md).
 
-<br>
 <br>
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-biome-config/blob/main/LICENSE).
+Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-biome-config/blob/main/LICENSE).
 
-<br>
 <br>
 
 ## 💖 Support
@@ -104,41 +99,30 @@ Licensed under the MIT license which is available here, [MIT license](https://gi
 </div>
 
 <br>
-<br>
 
 ## 🧬 Related
 
-[@igorskyflyer/zing](https://www.npmjs.com/package/@igorskyflyer/zing)
+[**@igorskyflyer/zing**](https://www.npmjs.com/package/@igorskyflyer/zing)
 
 > _🐌 Zing is a C# style String formatter for JavaScript that empowers Strings with positional arguments - composite formatting. 🚀_
 
-<br>
-
-[@igorskyflyer/comment-it](https://www.npmjs.com/package/@igorskyflyer/comment-it)
+[**@igorskyflyer/comment-it**](https://www.npmjs.com/package/@igorskyflyer/comment-it)
 
 > _📜 Formats the provided string as a comment, either a single or a multi line comment for the given programming language. 💻_
 
-<br>
-
-[@igorskyflyer/my-file-path](https://www.npmjs.com/package/@igorskyflyer/my-file-path)
+[**@igorskyflyer/my-file-path**](https://www.npmjs.com/package/@igorskyflyer/my-file-path)
 
 > _🌟 An npm module that strongly types file paths! 🥊_
 
-<br>
-
-[@igorskyflyer/simple-exec](https://www.npmjs.com/package/@igorskyflyer/simple-exec)
+[**@igorskyflyer/simple-exec**](https://www.npmjs.com/package/@igorskyflyer/simple-exec)
 
 > _🕺 Command. Execution. Made. Simple. ▶_
 
-<br>
-
-[@igorskyflyer/astro-easynav-button](https://www.npmjs.com/package/@igorskyflyer/astro-easynav-button)
+[**@igorskyflyer/astro-easynav-button**](https://www.npmjs.com/package/@igorskyflyer/astro-easynav-button)
 
 > _🧭 Add an easy-to-use navigational button (jump to top/bottom) to your Astro site. 🔼_
 
 <br>
-<br>
-<br>
 
 ## 👨🏻‍💻 Author
-Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
+Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
