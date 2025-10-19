@@ -7,7 +7,7 @@
 <blockquote align="center">Strict Linting • Clean Imports • Consistent Style • Node ESM Ready</blockquote>
 
 <h4 align="center">
-  👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules - all in one shareable config. Code like igorskyflyer does! 🐺
+  👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. Code like igorskyflyer does! 🐺
 </h4>
 
 <br>
