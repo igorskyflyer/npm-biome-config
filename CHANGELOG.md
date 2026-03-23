@@ -4,56 +4,65 @@
 
 <br>
 
-## v2.2.0 (*20-Oct-2025*)
+## v2.3.0 – *2026-03-23*
 
-- ✨ **feat**: ignore `dist/` when formatting
-- ✨ **feat**: ignore `dist/` when linting
-- ✨ **feat**: force the `.js` extension for module imports
-- **💻 dev**: upgrade to Biome `v2.2.6`
-
-<br>
-<br>
-
-## v2.1.0 (*28-Aug-2025*)
-
-- **💻 dev**: upgrade to Biome `v2.2.2`
+- 🔩 **config**: upgrade Biome to `v2.4.8`
+- 🔩 **config**: set `bracketSameLine` to `false`
+- 🔩 **config**: set `quoteProperties` to `asNeeded`
+- 🔩 **config**: set `trailingCommas` to `all`
+- 🔩 **config**: set `noBarrelFile` to `warn`
+- 🔩 **config**: set `noReExportAll` to `warn`
+- 🔩 **config**: set `noExplicitAny` to `error`
+- 🔥 **debt**: remove orphan `nursery` section
 
 <br>
 
-## v2.0.1 (*19-Jul-2025*)
+## v2.2.0 – *2025-10-20*
 
-**✅ fix**: fix CHANGELOG and README
-
-<br>
-
-## v2.0.0 (*19-Jul-2025*)
-
-- **❌ BREAKING**: upgrade to Biome `v.2.0.0`
+- ✨ **feature**: ignore `dist/` when formatting
+- ✨ **feature**: ignore `dist/` when linting
+- ✨ **feature**: force `.js` extension for module imports
+- 📦 **deps**: upgrade Biome to `v2.2.6`
 
 <br>
 
-## v1.0.3 (*31-Jul-2024*)
+## v2.1.0 – *2025-08-28*
 
-- **✅ fix**: set `formatWithErrors` to `true`
-
-<br>
-<br>
-
-## v1.0.2 (*30-Jul-2024*)
-
-- **✅ fix**: set level of `noExcessiveCognitiveComplexity` to `warn`
+- 📦 **deps**: upgrade Biome to `v2.2.2`
 
 <br>
-<br>
 
-## v1.0.1 (*29-Jul-2024*)
+## v2.0.1 – *2025-07-19*
 
-- **✅ fix**: set level of `useTopLevelRegex` to `warn`
-- **✅ fix**: set level of `noExplicitAny` to `info`
+- 📚 **docs**: remove inconsistencies `CHANGELOG` and `README`
 
 <br>
+
+## v2.0.0 – *2025-07-19*
+
+⚠️ **BREAKING**
+- 📦 **deps**: upgrade to Biome `v2.0.0`
 <br>
 
-## v1.0.0 (*28-Jul-2024*)
+## v1.0.3 – *2024-07-31*
 
-- **🚀 launch**: initial release 🎉
+- 🔩 **config**: set `formatWithErrors` to `true`
+
+<br>
+
+## v1.0.2 – *2024-07-30*
+
+- 🔩 **config**: set `noExcessiveCognitiveComplexity` to `warn`
+
+<br>
+
+## v1.0.1 – *2024-07-29*
+
+- 🔩 **config**: set `useTopLevelRegex` to `warn`
+- 🔩 **config**: set `noExplicitAny` to `info`
+
+<br>
+
+## v1.0.0 – *2024-07-28*
+
+- 🚀 **launch**: initial release 🎉
