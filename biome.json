@@ -1,82 +1,81 @@
 {
-    "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
-    "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "$schema": "https://biomejs.dev/schemas/2.4.8/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "formatter": {
+    "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
+    "formatWithErrors": true
+  },
+  "json": {
     "formatter": {
-        "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
-        "formatWithErrors": true
-    },
-    "json": {
-        "formatter": {
-            "indentStyle": "space",
-            "indentWidth": 4,
-            "lineEnding": "lf"
-        }
-    },
-    "javascript": {
-        "formatter": {
-            "arrowParentheses": "always",
-            "bracketSameLine": true,
-            "bracketSpacing": true,
-            "indentStyle": "space",
-            "indentWidth": 2,
-            "quoteProperties": "preserve",
-            "quoteStyle": "single",
-            "semicolons": "asNeeded",
-            "trailingCommas": "none",
-            "lineEnding": "lf"
-        }
-    },
-    "linter": {
-        "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
-        "rules": {
-            "recommended": true,
-            "correctness": {
-                "noUnusedVariables": "error",
-                "noUnusedPrivateClassMembers": "error",
-                "noUnusedImports": "error",
-                "useImportExtensions": {
-                    "level": "error",
-                    "options": {
-                        "forceJsExtensions": true
-                    }
-                }
-            },
-            "complexity": {
-                "useSimplifiedLogicExpression": "error",
-                "noExcessiveCognitiveComplexity": "warn"
-            },
-            "performance": {
-                "noBarrelFile": "error",
-                "noReExportAll": "error",
-                "useTopLevelRegex": "warn"
-            },
-            "style": {
-                "noInferrableTypes": "off",
-                "noNegationElse": "error",
-                "useBlockStatements": "error",
-                "useCollapsedElseIf": "error",
-                "useConsistentArrayType": "error",
-                "useFilenamingConvention": {
-                    "level": "error",
-                    "options": {
-                        "strictCase": true,
-                        "requireAscii": true
-                    }
-                },
-                "useShorthandAssign": "error",
-                "useThrowOnlyError": "error",
-                "useExplicitLengthCheck": "error",
-                "useConsistentBuiltinInstantiation": "error",
-                "noYodaExpression": "error",
-                "useArrayLiterals": "error"
-            },
-            "suspicious": {
-                "noExplicitAny": "info",
-                "useErrorMessage": "error",
-                "noConsole": "warn",
-                "useAdjacentOverloadSignatures": "error"
-            },
-            "nursery": {}
-        }
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf"
     }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all",
+      "lineEnding": "lf"
+    }
+  },
+  "linter": {
+    "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedPrivateClassMembers": "error",
+        "noUnusedImports": "error",
+        "useImportExtensions": {
+          "level": "error",
+          "options": {
+            "forceJsExtensions": true
+          }
+        }
+      },
+      "complexity": {
+        "useSimplifiedLogicExpression": "error",
+        "noExcessiveCognitiveComplexity": "warn"
+      },
+      "performance": {
+        "noBarrelFile": "warn",
+        "noReExportAll": "warn",
+        "useTopLevelRegex": "warn"
+      },
+      "style": {
+        "noInferrableTypes": "off",
+        "noNegationElse": "error",
+        "useBlockStatements": "error",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "strictCase": true,
+            "requireAscii": true
+          }
+        },
+        "useShorthandAssign": "error",
+        "useThrowOnlyError": "error",
+        "useExplicitLengthCheck": "error",
+        "useConsistentBuiltinInstantiation": "error",
+        "noYodaExpression": "error",
+        "useArrayLiterals": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "error",
+        "useErrorMessage": "error",
+        "noConsole": "warn",
+        "useAdjacentOverloadSignatures": "error"
+      }
+    }
+  }
 }
