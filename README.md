@@ -6,7 +6,7 @@
 <blockquote align="center">Strict Linting • Clean Imports • Consistent Style • Node ESM Ready</blockquote>
 
 <h4 align="center">
-  👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. Code like igorskyflyer does! 🐺
+  👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. 🐺
 </h4>
 
 <br>
@@ -34,28 +34,37 @@
 - ⚡ Performance-focused rules - flags barrel files, re-export-all and top-level regex
 - 📁 Enforced filenaming conventions with strict casing and `ASCII` requirements
 - 🛡️ Suspicious behavior checks - console usage, overload signatures and error messaging
-- ✒️ No trailing commas or unnecessary semicolons for cleaner diffs
+- ✒️ Keep trailing commas and remove unnecessary semicolons for cleaner diffs
 - 🧹 Import organization powered by Biome's built-in `organizeImports`
-- 🔍 Supports adjacent overloads and explicit length checks
+- 💎 Supports adjacent overloads and explicit length checks
 
 <br>
 
 ## Usage
 
 Install it by executing any of the following, depending on the preferred package manager:
+
+```bash
+bun add -D @igorskyflyer/biome-config
+```
+
 ```bash
 pnpm add -D @igorskyflyer/biome-config
 ```
+
 ```bash
 yarn add -D @igorskyflyer/biome-config
 ```
+
 ```bash
 npm i -D @igorskyflyer/biome-config
 ```
 
 <br>
 
-Then extend the config in `biome.json`:
+Then extend the config in **biome.json**:
+
+`biome.json`
 ```json
 {
   "extends": ["@igorskyflyer/biome-config"]
@@ -63,6 +72,8 @@ Then extend the config in `biome.json`:
 ```
 
 Override any rule locally as needed:
+
+`biome.json`
 ```json
 {
   "extends": ["@igorskyflyer/biome-config"],
@@ -84,7 +95,7 @@ The config is split into three concern areas - formatting, linting and assist - 
 
 **Formatting** enforces single quotes, no semicolons, trailing commas everywhere, 2-space indentation, `LF` line endings and `bracketSameLine: false` for clean prop/content separation in JSX and HTML. JSON gets its own formatter section for consistency.
 
-**Linting** covers four domains - correctness (unused vars, imports, private members), complexity (cognitive load warnings), performance (barrel files, re-export-all, top-level regex) and style (filenaming, array literals, yoda expressions, block statements). Suspicious behavior checks cover console usage, error messaging and overload signatures.
+**Linting** covers four domains - correctness (unused vars, imports, private members, parameters), complexity (cognitive load warnings), performance (barrel files, re-export-all, top-level regex) and style (filenaming, array literals, yoda expressions, block statements). Suspicious behavior checks cover console usage, error messaging and overload signatures. Suspicious behavior checks cover explicit `any` usage, console calls, error messaging and overload signatures.
 
 **Assist** enables Biome's built-in `organizeImports` for automatic, consistent import ordering on save.
 
@@ -127,6 +138,10 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-biome-c
 <br>
 
 ## Related
+
+This package is part of the [**dotfiles**](https://github.com/igorskyflyer/dotfiles) DX config suite - a curated index of independently installable configuration packages for linting, formatting, editing, JS/TS, React, Vue and many more.
+
+### Other related packages
 
 [**@igorskyflyer/zing**](https://www.npmjs.com/package/@igorskyflyer/zing)
 
