@@ -4,6 +4,15 @@
 
 <br>
 
+## v2.4.0 – *2026-03-31*
+
+- 📦 **deps**: upgrade Biome to v2.4.10
+- 🔩 **config**: update Biome config
+- 📚 **docs**: update README
+- 🐣 **repo**: update package description
+
+<br>
+
 ## v2.3.0 – *2026-03-23*
 
 - 🔩 **config**: upgrade Biome to `v2.4.8`
