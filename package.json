@@ -1,6 +1,6 @@
 {
   "name": "@igorskyflyer/biome-config",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. Code like igorskyflyer does! 🐺",
   "exports": {
     ".": "./biome.json"
@@ -12,12 +12,12 @@
     "pub": "git push origin main --tags"
   },
   "peerDependencies": {
-    "@biomejs/biome": "^2.4.8"
+    "@biomejs/biome": "^2.4.10"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.8"
+    "@biomejs/biome": "^2.4.10"
   },
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@10.33.0",
   "private": false,
   "publishConfig": {
     "access": "public"
