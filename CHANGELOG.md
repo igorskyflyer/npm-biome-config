@@ -7,7 +7,7 @@
 ## v2.4.0 – *2026-03-31*
 
 - 📦 **deps**: upgrade Biome to v2.4.10
-- 🔩 **config**: update Biome config
+- 🔩 **config**: set `noUnusedFunctionParameters` to `error`
 - 📚 **docs**: update README
 - 🐣 **repo**: update package description
 
