@@ -27,16 +27,18 @@
 
 ## Features
 
-- 👽 Strict linting rules for correctness, performance and style
+- 👽 Strict linting rules for correctness, security, performance and style
 - 🔍 Catches unused variables, imports, parameters and private class members
 - 🎨 Custom formatting for `JSON` and `JS`/`TS` - single quotes, `LF` endings, 2-space indentation
-- 🧠 Complexity warnings to reduce cognitive load and improve logic clarity
+- 🧠 Complexity rules to reduce cognitive load and improve logic clarity
 - ⚡ Performance-focused rules - flags barrel files, re-export-all and top-level regex
 - 📁 Enforced filenaming conventions with strict casing and `ASCII` requirements
-- 🛡️ Suspicious behavior checks - console usage, overload signatures and error messaging
-- ✒️ Keep trailing commas and remove unnecessary semicolons for cleaner diffs
+- 🛡️ Security and suspicious checks - no dangerous patterns, console usage, overload signatures and error messaging
+- ♿ Accessibility (a11y) warnings for JSX/HTML
+- 🧪 Nursery (experimental) rules at warning level
+- ✒️ Trailing commas in JS/TS (`all`) + no unnecessary semicolons for cleaner diffs
 - 🧹 Import organization powered by Biome's built-in `organizeImports`
-- 💎 Supports adjacent overloads and explicit length checks
+- 💎 Explicit length checks and adjacent overload signatures
 
 <br>
 
@@ -93,9 +95,17 @@ Override any rule locally as needed:
 
 The config is split into three concern areas - formatting, linting and assist - each with deliberate, documented decisions.
 
-**Formatting** enforces single quotes, no semicolons, trailing commas everywhere, 2-space indentation, `LF` line endings and `bracketSameLine: false` for clean prop/content separation in JSX and HTML. JSON gets its own formatter section for consistency.
+**Formatting** enforces single quotes, no semicolons (`asNeeded`), trailing commas everywhere, 2-space indentation, `LF` line endings and `bracketSameLine: false` for clean prop/content separation in JSX and HTML attributes. JSON gets its own formatter section for consistency.
 
-**Linting** covers four domains - correctness (unused vars, imports, private members, parameters), complexity (cognitive load warnings), performance (barrel files, re-export-all, top-level regex) and style (filenaming, array literals, yoda expressions, block statements). Suspicious behavior checks cover console usage, error messaging and overload signatures. Suspicious behavior checks cover explicit `any` usage, console calls, error messaging and overload signatures.
+**Linting** enables eight rule groups with clear intent:
+- **Correctness** - unused variables, imports, parameters and private class members
+- **Security** - dangerous patterns (`error`)
+- **Accessibility (a11y)** - JSX/HTML accessibility issues (`warn`)
+- **Nursery** - experimental rules (`warn`)
+- **Complexity** - simplified logic (`error`) and cognitive load warnings
+- **Performance** - barrel files, re-export-all and top-level regex (`warn`)
+- **Style** - filenaming (strictCase + ASCII), array literals, block statements, no Yoda expressions, etc.
+- **Suspicious** - explicit `any`, console usage, error messaging and adjacent overload signatures
 
 **Assist** enables Biome's built-in `organizeImports` for automatic, consistent import ordering on save.
 
