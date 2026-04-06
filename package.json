@@ -1,6 +1,6 @@
 {
   "name": "@igorskyflyer/biome-config",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. 🐺",
   "exports": {
     ".": "./biome.json"
