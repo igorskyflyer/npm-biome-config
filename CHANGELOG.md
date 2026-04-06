@@ -4,6 +4,17 @@
 
 <br>
 
+## v2.4.1 – *2026-04-06*
+
+- 🔩 **config**: set `enabled` to true on all top level objects
+- 🔩 **config**: make formatting rules global
+- 🔩 **config**: remove JSON-specific formatting rules (use global ones)
+- 🔩 **config**: set `trailingCommas` to `none` for JSON
+- 🔩 **config**: set all security violations to `error`
+- 🔩 **config**: set all accessibility violations to `warn`
+
+<br>
+
 ## v2.4.0 – *2026-03-31*
 
 - 📦 **deps**: upgrade Biome to v2.4.10
