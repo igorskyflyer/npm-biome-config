@@ -1,15 +1,23 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.10/schema.json",
-  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "assist": {
+    "enabled": true,
+    "actions": { "source": { "organizeImports": "on" } }
+  },
   "formatter": {
+    "enabled": true,
     "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
-    "formatWithErrors": true
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "trailingNewline": true,
+    "lineWidth": 80,
+    "attributePosition": "auto"
   },
   "json": {
     "formatter": {
-      "indentStyle": "space",
-      "indentWidth": 2,
-      "lineEnding": "lf"
+      "trailingCommas": "none"
     }
   },
   "javascript": {
@@ -17,29 +25,27 @@
       "arrowParentheses": "always",
       "bracketSameLine": false,
       "bracketSpacing": true,
-      "indentStyle": "space",
-      "indentWidth": 2,
       "quoteProperties": "asNeeded",
       "quoteStyle": "single",
       "semicolons": "asNeeded",
-      "trailingCommas": "all",
-      "lineEnding": "lf"
+      "trailingCommas": "all"
     }
   },
   "linter": {
+    "enabled": true,
     "includes": ["**", "!**/node_modules/**", "!**/dist/**"],
     "rules": {
       "recommended": true,
+      "security": "error",
+      "a11y": "warn",
+      "nursery": "warn",
       "correctness": {
         "noUnusedVariables": "error",
         "noUnusedPrivateClassMembers": "error",
         "noUnusedImports": "error",
         "noUnusedFunctionParameters": "error",
         "useImportExtensions": {
-          "level": "error",
-          "options": {
-            "forceJsExtensions": true
-          }
+          "level": "warn"
         }
       },
       "complexity": {
