@@ -4,6 +4,21 @@
 
 <br>
 
+## v3.0.0 – *2026-07-08*
+
+_**Breaking**_
+- 🔩 **config**: set `semicolons` to `always` in effort to make the configuration file more deterministic
+- 🔩 **config**: remove `nursery`
+- 🔩 **config**: set `noInferrableTypes` to `error`
+
+_**Features**_
+- 🔩 **config**: add overrides for performance rules
+
+_**Maintenance**_
+- 🔩 **config**: update Biome schema version
+
+<br>
+
 ## v2.4.1 – *2026-04-06*
 
 - 🔩 **config**: set `enabled` to true on all top level objects
@@ -85,4 +100,4 @@
 
 ## v1.0.0 – *2024-07-28*
 
-- 🚀 **launch**: initial release 🎉
+- 🚀 **env**: release initial version 🎉
