@@ -36,7 +36,7 @@
 - 🛡️ Security and suspicious checks - no dangerous patterns, console usage, overload signatures and error messaging
 - ♿ Accessibility (a11y) warnings for JSX/HTML
 - 🧪 Nursery (experimental) rules at warning level
-- ✒️ Trailing commas in JS/TS (`all`) + no unnecessary semicolons for cleaner diffs
+- ✒️ Strict semicolons and trailing commas (`all`) for deterministic, clean Git diffs
 - 🧹 Import organization powered by Biome's built-in `organizeImports`
 - 💎 Explicit length checks and adjacent overload signatures
 
@@ -95,7 +95,7 @@ Override any rule locally as needed:
 
 The config is split into three concern areas - formatting, linting and assist - each with deliberate, documented decisions.
 
-**Formatting** enforces single quotes, no semicolons (`asNeeded`), trailing commas everywhere, 2-space indentation, `LF` line endings and `bracketSameLine: false` for clean prop/content separation in JSX and HTML attributes. JSON gets its own formatter section for consistency.
+**Formatting**: Enforces strict semicolons, single quotes, global trailing commas, 2 space indentation, and `LF` line endings for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
 
 **Linting** enables eight rule groups with clear intent:
 - **Correctness** - unused variables, imports, parameters and private class members
@@ -134,15 +134,15 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-biome-c
 ## Support
 
 <div align="center">
-  Engineering and documenting open-source projects<br>
-  involves a significant investment of time.
-  <br><br>
-  If this project or its implementation has provided value,<br>
-  support is greatly appreciated.
-  <br><br>
-  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
-  <br><br>
-  <em>Thank you for supporting these efforts!</em> 🙏😊
+  If this open-source project has saved you time or improved your workflow, consider supporting its continued development via <a href="https://liberapay.com/igorskyflyer/donate"><strong>LiberaPay</a> or <a href="https://ko-fi.com/igorskyflyer"><strong>Ko-Fi</strong></a>.
+  <br>
+  <br>
+  <a href="https://liberapay.com/igorskyflyer/donate"><img alt=" Igor Dimitrijević (igorskyflyer) - Donate via Liberapay to Sustain Open-Source Projects" src="https://liberapay.com/assets/widgets/donate.svg" loading="lazy"></a> <a href="https://ko-fi.com/igorskyflyer"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Support Igor Dimitrijević (igorskyflyer) - Donate via Ko-Fi to Sustain Open-Source Projects" width="120" height="30" loading="lazy"></a>
+  <br>
+  <br>
+  <blockquote>
+    Support helps fund new open-source tools, maintenance, and documentation.
+  </blockquote>
 </div>
 
 <br>
