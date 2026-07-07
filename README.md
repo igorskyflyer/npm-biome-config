@@ -1,7 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-biome-config/main/media/biome-config.png" alt="Icon of Config for Biome" width="256" height="256">
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-biome-config/refs/heads/main/media/biome-config.png" alt="Icon of Config for Biome" width="256" height="256">
   <h1>Config for Biome</h1>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/biome-config"><img src="https://img.shields.io/npm/v/@igorskyflyer/biome-config.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/biome-config"><img src="https://img.shields.io/npm/dt/@igorskyflyer/biome-config.svg" alt="npm downloads"></a>
+  <a href="https://www.npmjs.com/package/@igorskyflyer/biome-config"><img src="https://img.shields.io/node/v/@igorskyflyer/biome-config.svg" alt="Node version"></a>
+  <a href="https://github.com/igorskyflyer/npm-biome-config/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/@igorskyflyer/biome-config.svg" alt="License"></a>
+  <a href="https://liberapay.com/igorskyflyer/donate"><img src="https://img.shields.io/liberapay/receives/igorskyflyer.svg?logo=liberapay"></a>
 </div>
+
+<br>
 
 <blockquote align="center">Strict Linting • Clean Imports • Consistent Style • Node ESM Ready</blockquote>
 
@@ -92,7 +99,6 @@ Override any rule locally as needed:
 <br>
 
 ## Implementation
-
 The config is split into three concern areas - formatting, linting and assist - each with deliberate, documented decisions.
 
 **Formatting**: Enforces strict semicolons, single quotes, global trailing commas, 2 space indentation, and `LF` line endings for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
@@ -141,7 +147,7 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-biome-c
   <br>
   <br>
   <blockquote>
-    Support helps fund new open-source tools, maintenance, and documentation.
+    Support helps fund new open-source tools, maintenance, and documentation, thank you!
   </blockquote>
 </div>
 
