@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.10/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.2/schema.json",
   "assist": {
     "enabled": true,
     "actions": { "source": { "organizeImports": "on" } }
@@ -27,7 +27,7 @@
       "bracketSpacing": true,
       "quoteProperties": "asNeeded",
       "quoteStyle": "single",
-      "semicolons": "asNeeded",
+      "semicolons": "always",
       "trailingCommas": "all"
     }
   },
@@ -38,7 +38,6 @@
       "recommended": true,
       "security": "error",
       "a11y": "warn",
-      "nursery": "warn",
       "correctness": {
         "noUnusedVariables": "error",
         "noUnusedPrivateClassMembers": "error",
@@ -58,7 +57,7 @@
         "useTopLevelRegex": "warn"
       },
       "style": {
-        "noInferrableTypes": "off",
+        "noInferrableTypes": "error",
         "noNegationElse": "error",
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
@@ -84,5 +83,18 @@
         "useAdjacentOverloadSignatures": "error"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/index.ts", "**/index.js", "**/public-api.ts"],
+      "linter": {
+        "rules": {
+          "performance": {
+            "noBarrelFile": "off",
+            "noReExportAll": "off"
+          }
+        }
+      }
+    }
+  ]
 }
