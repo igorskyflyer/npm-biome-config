@@ -32,19 +32,18 @@
 <br>
 
 ## Features
-
 - 👽 Strict linting rules for correctness, security, performance and style
 - 🔍 Catches unused variables, imports, parameters and private class members
 - 🎨 Custom formatting for `JSON` and `JS`/`TS` - single quotes, `LF` endings, 2-space indentation
 - 🧠 Complexity rules to reduce cognitive load and improve logic clarity
-- ⚡ Performance-focused rules - flags barrel files, re-export-all and top-level regex
+- ⚡ Performance-focused rules - flags top-level regex, barrel files, and re-export-all with smart entry-point overrides
 - 📁 Enforced filenaming conventions with strict casing and `ASCII` requirements
 - 🛡️ Security and suspicious checks - no dangerous patterns, console usage, overload signatures and error messaging
 - ♿ Accessibility (a11y) warnings for JSX/HTML
 - 🧪 Nursery (experimental) rules at warning level
 - ✒️ Strict semicolons and trailing commas (`all`) for deterministic, clean Git diffs
 - 🧹 Import organization powered by Biome's built-in `organizeImports`
-- 💎 Explicit length checks and adjacent overload signatures
+- 💎 Explicit length checks, removal of redundant inferrable type annotations, and adjacent overload signatures
 
 <br>
 
@@ -108,8 +107,8 @@ The config is split into three concern areas - formatting, linting and assist - 
 - **Accessibility (a11y)** - JSX/HTML accessibility issues (`warn`)
 - **Nursery** - experimental rules (`warn`)
 - **Complexity** - simplified logic (`error`) and cognitive load warnings
-- **Performance** - barrel files, re-export-all and top-level regex (`warn`)
-- **Style** - filenaming (strictCase + ASCII), array literals, block statements, no Yoda expressions, etc.
+- **Performance** - top-level regex, barrel files, and re-export-all (`warn`) with localized overrides for public entry points
+- **Style** - disallows redundant type annotations for `inferrable` types, filenaming (`strictCase` + `ASCII`), array literals, block statements, no `Yoda` expressions, etc.
 - **Suspicious** - explicit `any`, console usage, error messaging and adjacent overload signatures
 
 **Assist** enables Biome's built-in `organizeImports` for automatic, consistent import ordering on save.
