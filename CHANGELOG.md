@@ -4,6 +4,14 @@
 
 <br>
 
+## v3.0.1 – *2026-07-09*
+
+_**Maintenance**_
+
+- 📚 **docs**: fix discrepancies between docs and actual config
+
+<br>
+
 ## v3.0.0 – *2026-07-08*
 
 _**Breaking**_
