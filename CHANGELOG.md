@@ -9,6 +9,8 @@
 _**Maintenance**_
 
 - 📚 **docs**: fix discrepancies between docs and actual config
+- 🔩 **config**: update Biome schema version to `v2.5.3`
+- 📦 **deps**: upgrade Biome to `v2.5.3`
 
 <br>
 
