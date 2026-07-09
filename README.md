@@ -98,7 +98,7 @@ Override any rule locally as needed:
 ## Implementation
 The config is split into three concern areas - formatting, linting and assist - each with deliberate, documented decisions.
 
-**Formatting**: Enforces strict semicolons, single quotes, trailing commas for JS/TS, 2 space indentation, and `LF` line endings for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
+**Formatting**: Enforces strict semicolons, single quotes and trailing commas for JS/TS, alongside 2 space indentation and `LF` line endings applied globally, for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
 
 **Linting** enables seven rule groups with clear intent:
 - **Correctness** - unused variables, imports, parameters and private class members
