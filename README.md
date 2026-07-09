@@ -40,8 +40,7 @@
 - 📁 Enforced filenaming conventions with strict casing and `ASCII` requirements
 - 🛡️ Security and suspicious checks - no dangerous patterns, console usage, overload signatures and error messaging
 - ♿ Accessibility (a11y) warnings for JSX/HTML
-- 🧪 Nursery (experimental) rules at warning level
-- ✒️ Strict semicolons and trailing commas (`all`) for deterministic, clean Git diffs
+- ✒️ Strict semicolons and trailing commas (`all`) for JS/TS for deterministic, clean Git diffs
 - 🧹 Import organization powered by Biome's built-in `organizeImports`
 - 💎 Explicit length checks, removal of redundant inferrable type annotations, and adjacent overload signatures
 
@@ -52,19 +51,19 @@
 Install it by executing any of the following, depending on the preferred package manager:
 
 ```bash
-bun add -D @igorskyflyer/biome-config
+bun add @igorskyflyer/biome-config -d
 ```
 
 ```bash
-pnpm add -D @igorskyflyer/biome-config
+pnpm add @igorskyflyer/biome-config -D
 ```
 
 ```bash
-yarn add -D @igorskyflyer/biome-config
+yarn add @igorskyflyer/biome-config -D
 ```
 
 ```bash
-npm i -D @igorskyflyer/biome-config
+npm i @igorskyflyer/biome-config -D
 ```
 
 <br>
@@ -99,13 +98,12 @@ Override any rule locally as needed:
 ## Implementation
 The config is split into three concern areas - formatting, linting and assist - each with deliberate, documented decisions.
 
-**Formatting**: Enforces strict semicolons, single quotes, global trailing commas, 2 space indentation, and `LF` line endings for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
+**Formatting**: Enforces strict semicolons, single quotes, trailing commas for JS/TS, 2 space indentation, and `LF` line endings for deterministic history tracking. Utilizes `bracketSameLine: false` for structural attribute separation in JSX and HTML, with a dedicated configuration block for JSON files.
 
-**Linting** enables eight rule groups with clear intent:
+**Linting** enables seven rule groups with clear intent:
 - **Correctness** - unused variables, imports, parameters and private class members
 - **Security** - dangerous patterns (`error`)
 - **Accessibility (a11y)** - JSX/HTML accessibility issues (`warn`)
-- **Nursery** - experimental rules (`warn`)
 - **Complexity** - simplified logic (`error`) and cognitive load warnings
 - **Performance** - top-level regex, barrel files, and re-export-all (`warn`) with localized overrides for public entry points
 - **Style** - disallows redundant type annotations for `inferrable` types, filenaming (`strictCase` + `ASCII`), array literals, block statements, no `Yoda` expressions, etc.
