@@ -4,6 +4,15 @@
 
 <br>
 
+## v3.0.2 – *2026-07-16*
+
+_**Maintenance**_
+
+- 🔩 **config**: update Biome schema version to `v2.5.4`
+- 📦 **deps**: upgrade Biome to `v2.5.4`
+
+<br>
+
 ## v3.0.1 – *2026-07-09*
 
 _**Maintenance**_
