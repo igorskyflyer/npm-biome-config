@@ -51,7 +51,7 @@
 Install it by executing any of the following, depending on the preferred package manager:
 
 ```bash
-bun add @igorskyflyer/biome-config -d
+bun add @igorskyflyer/biome-config -D
 ```
 
 ```bash
